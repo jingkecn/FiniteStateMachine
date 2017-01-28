@@ -35,4 +35,5 @@ export class AbstractEventTarget {
     (this._callbacks[event] = this._callbacks[event] || []).slice(0).forEach((cb) => cb.apply(self, args));
     return this;
   }
+  
 }
