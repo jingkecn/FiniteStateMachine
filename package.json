@@ -1,0 +1,35 @@
+{
+  "name": "finite-state-machine",
+  "version": "1.0.0",
+  "description": "Demo for Finite-State Machine",
+  "main": "app.js",
+  "dependencies": {
+    "enumify": "^1.0.4",
+    "lodash": "^4.17.4",
+    "webpack": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jingkecn/FiniteStateMachine.git"
+  },
+  "keywords": [
+    "FSM",
+    "Demo",
+    "Finite-State",
+    "Machine"
+  ],
+  "author": "Jing KE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jingkecn/FiniteStateMachine/issues"
+  },
+  "homepage": "https://github.com/jingkecn/FiniteStateMachine#readme"
+}
