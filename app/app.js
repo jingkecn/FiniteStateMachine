@@ -10,7 +10,7 @@ class Application {
     AppStateMachine.defineTransition(new Transition(State.Inactive, Command.Dispose, State.Disposed));
     AppStateMachine.defineTransition(new Transition(State.Active, Command.Deactivate, State.Inactive));
     AppStateMachine.defineTransition(new Transition(State.Active, Command.Dispose, State.Disposed));
-    AppStateMachine.addEventListener("StateChanged", this.onStateChanged);
+    AppStateMachine.addEventListener("StateTransitioned", this.onStateTransitioned);
   }
 
   get rootElement() {
@@ -21,7 +21,7 @@ class Application {
     this._rootElement = rootElement;
   }
 
-  onStateChanged(newState) {
+  onStateTransitioned(newState) {
     switch (newState) {
       case State.Inactive:
         // TODO: logics when app is inactive.
