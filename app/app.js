@@ -10,7 +10,7 @@ class Application {
     AppStateMachine.defineTransition(new Transition(State.Inactive, Command.Dispose, State.Disposed));
     AppStateMachine.defineTransition(new Transition(State.Active, Command.Deactivate, State.Inactive));
     AppStateMachine.defineTransition(new Transition(State.Active, Command.Dispose, State.Disposed));
-    AppStateMachine.addEventListener("StateTransitioned", this.onStateTransitioned);
+    AppStateMachine.addEventListener("statetransitioned", this.onStateTransitioned);
   }
 
   get rootElement() {

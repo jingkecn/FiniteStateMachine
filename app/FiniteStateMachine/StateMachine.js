@@ -39,7 +39,7 @@ class StateMachine extends AbstractNotifyPropertyChangedEventTarget {
   }
 
   onStateTransitioned(newState) {
-    this.dispatchEvent("StateTransitioned", newState);
+    this.dispatchEvent("statetransitioned", newState);
   }
 
 }
